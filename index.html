@@ -3,32 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
   </head>
   <body
     style="
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-      font-family: IBM Plex Sans, sans-serif;
-      padding: 0;
       margin: 0;
-      box-sizing: border-box;
-    "
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9fafb;
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+      font-family: Roboto, sans-serif;"
   >
     <table
       width="100%"
       border="0"
       cellspacing="0"
       cellpadding="0"
-      style="background-color: #f9fafb;"
+      style="background-color: #FFFFFF"
     >
       <tr>
-        <td align="center">
+        <td align="center" style="position: relative">
+          <!--  Background image only inside the main template -->
+          <img
+            src="./img/truckservicedepot-bg.png"
+            alt=""
+            style="
+              position: absolute;
+              top: 80px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 520px;
+              height: 520px;
+              object-fit: cover;
+              z-index: 0;
+            "
+          />
+
+          <!--  Main template box -->
           <table
             width="520"
             cellpadding="0"
             cellspacing="0"
             border="0"
             style="
-              background-color: #ffffff;
+              position: relative;
+              z-index: 1;
+              background-color: transparent;
               border-radius: 8px;
               overflow: hidden;
             "
@@ -37,29 +57,26 @@
             <tr>
               <td align="center" style="padding: 24px 5px">
                 <img
-                  src="https://zioun.github.io/Email-Template-Tach/img/tach.png"
+                  src="img/truckservicedepot.png"
                   alt="TACH Logo"
                   width="120"
-                  style="display: block"
+                  style="display: block; margin-bottom: -80px"
                 />
               </td>
             </tr>
 
             <!-- Title Section -->
-            <tr style="background-color: #f5f6f5">
+            <tr>
               <td align="center">
                 <h2
                   style="
                     font-size: 25px;
-                    font-weight: 600;
+                    font-weight: bold;
                     color: #1f2937;
-                    margin: 0;
+                    margin: 75px 0 12px 0;
                     max-width: 458px;
                     line-height: 35px;
-                    font-weight: 600;
-                    max-width: 458;
-                    margin-top: 32px;
-                    margin-bottom: 12px;
+                    font-family: Roboto Slab, serif;
                   "
                 >
                   Truck Service Depot and TACH have partnered to provide Premium
@@ -69,24 +86,22 @@
             </tr>
 
             <!-- Partner Logos Section -->
-            <tr style="background-color: #f5f6f5">
+            <tr>
               <td align="center">
                 <img
-                  src="https://zioun.github.io/Email-Template-Tach/img//truckservicedepot%20x%20tach.png"
+                  src="./img/tach x truckservicedepot.png"
                   alt="TACH x Truck Service Depot"
                   width="460"
                   style="display: block; border-radius: 8px; margin-top: 18px"
                 />
                 <p
                   style="
-                    font-size: 15px;
-                    color: #4B4B4B;
+                    font-size: 18px;
+                    color: #4b4b4b;
                     line-height: 150%;
                     margin: 15px 0 0;
                     max-width: 350px;
                     font-weight: 400;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-size: 18px;
                     padding: 5px 0px 21px 0px;
                   "
                 >
@@ -118,7 +133,6 @@
                         style="
                           font-size: 26px;
                           font-weight: 700;
-                          font-weight: 600;
                           line-height: 34px;
                           color: #1f2937;
                           margin: 0;
@@ -128,11 +142,10 @@
                       </h3>
                       <p
                         style="
-                          font-size: 15px;
-                          color: #4B4B4B;
-                          margin: 8px 0 0;
-                          font-family: Arial, Helvetica, sans-serif; font-weight:400;
                           font-size: 18px;
+                          color: #4b4b4b;
+                          margin: 8px 0 0;
+                          font-weight: 400;
                           line-height: 150%;
                         "
                       >
@@ -150,8 +163,7 @@
               <td
                 style="
                   padding: 10px 30px 20px 30px;
-                  color: #4B4B4B;
-                  font-family: Arial, Helvetica, sans-serif;
+                  color: #4b4b4b;
                   font-size: 18px;
                   font-weight: 400;
                   line-height: 150%;
@@ -171,14 +183,16 @@
                 <a
                   href="#"
                   style="
-                    background-color: #4a946b;
+                    background-color: #90111f;
                     color: #ffffff;
                     text-decoration: none;
                     padding: 12px 30px;
                     border-radius: 6px;
                     font-size: 18px;
-                    font-family: Arial, Helvetica, sans-serif; font-weight:400;
+                    font-weight: 400;
                     display: inline-block;
+                    text-transform: uppercase;
+                    font-family: Roboto Slab, serif;
                   "
                 >
                   Check them out.
@@ -192,14 +206,12 @@
                 align="center"
                 style="
                   padding-bottom: 40px;
-                  margin: auto;
                   font-size: 14px;
-                  color: #4B4B4B;
-                  align-self: stretch;
-                  max-width: 450px;
-                  display: block;
-                  font-family: Arial, Helvetica, sans-serif; font-weight:400;
+                  color: #4b4b4b;
                   line-height: 150%;
+                  max-width: 450px;
+                  margin: auto;
+                  display: block;
                 "
               >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -208,19 +220,19 @@
                 <br /><br />
                 <a
                   href="https://support.animaapp.com/en/"
-                  style="color: #4a946b; text-decoration: none; margin: 0 8px"
+                  style="color: #90111f; text-decoration: none; margin: 0 8px"
                   >Help Center</a
                 >
                 |
                 <a
                   href="https://forum.animaapp.com/privacy"
-                  style="color: #4a946b; text-decoration: none; margin: 0 8px"
+                  style="color: #90111f; text-decoration: none; margin: 0 8px"
                   >Privacy Policy</a
                 >
                 |
                 <a
                   href="https://forum.animaapp.com/tos"
-                  style="color: #4a946b; text-decoration: none; margin: 0 8px"
+                  style="color: #90111f; text-decoration: none; margin: 0 8px"
                   >Terms of Service</a
                 >
               </td>
